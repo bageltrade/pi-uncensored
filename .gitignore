@@ -1,0 +1,5 @@
+auth.json
+*.env
+nvidia.env
+.DS_Store
+sessions/

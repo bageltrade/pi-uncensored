@@ -1,0 +1,20 @@
+{
+  "$schema": "https://pi.dev/schemas/models.schema.json",
+  "providers": {
+    "nvidia": {
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "api": "openai-completions",
+      "apiKey": "$NVIDIA_API_KEY",
+      "models": [
+        {
+          "id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+          "name": "Nemotron 3.5 Super VL 120B",
+          "input": ["text", "image"],
+          "reasoning": false,
+          "contextWindow": 131072,
+          "maxTokens": 16384
+        }
+      ]
+    }
+  }
+}
